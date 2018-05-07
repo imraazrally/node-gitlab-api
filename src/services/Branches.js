@@ -17,6 +17,7 @@ class Branches extends BaseService {
   }
 
   protect(projectId, branchName, options) {
+    console.log('printing options*******', options);
     const pId = encodeURIComponent(projectId);
 
     return RequestHelper.put(
